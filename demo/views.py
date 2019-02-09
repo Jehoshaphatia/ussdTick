@@ -20,9 +20,11 @@ def index(request):
         response = ""
 
         if text == "":
-            response = "CON What would you want to check \n"
+            response = "CON Welcome To Smart Tickets \n"
             # response .= "1. My Account \n"
-            response += "1. My Phone Number"
+            response += "1. Movie Ticket"
+            # response .= "1. My Account \n"
+            response += "2. Events Ticket"
 
         elif text == "1":
             response = "END My Phone number is {0}".format(phone_number)
